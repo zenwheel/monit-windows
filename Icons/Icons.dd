@@ -1,0 +1,24 @@
+# DrawDown Icon
+#
+# Please see example automator action "CreateIcons" using
+# this DrawDown to use a file selection to automatically
+# create a full icon set using a dropped logo
+#
+<define:resize=smooth>
+<define:input-file=Monit-Logo-input>
+
+!BaseIcon:
+"(input-file)"	1024x1024
+
+
+Artwork/16x16:
+"BaseIcon"		16x16
+
+Artwork/32x32:
+"BaseIcon"		32x32
+
+Artwork/48x48:
+"BaseIcon"		48x48
+
+Artwork/256x256:
+"BaseIcon"		256x256
